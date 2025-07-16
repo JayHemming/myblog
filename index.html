@@ -121,5 +121,16 @@ backToTopButton.addEventListener('click', function() {
   });
 });
 </script>
+<script>
+  const heading = document.querySelector('.glow-header');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const scaleFactor = Math.min(1 + scrollY / 500, 2); // Max scale = 2x
+    heading.style.transform = `scale(${scaleFactor})`;
+  });
+</script>
+
+
 </body>
 </html>
