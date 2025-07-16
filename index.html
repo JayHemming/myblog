@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hack & Hatch</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+  <!-- Smooth Scroll Polyfill for better browser support -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#hacks">Hacks</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section id="home" class="section hero">
+	<div class="video-wrapper">
+      <video autoplay muted loop id="background-video">
+        <source src="home-page.mp4" type="video/mp4">
+        <!-- Add other video formats for compatibility -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h1 class="glow-header";>Welcome to Hack & Hatch</h1>
+    <p style="font-family: impact, sans-serif;">The place where Hacks Crack and Ideas Hatch...</p><br>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section about">
+  <br>
+  <br>
+    <h2>About Us</h2>
+		<span style="font-family: arial, sans-serif">
+			<p>We get it—tech hiccups happen. Whether it’s a stubborn Excel formula, a CSS layout that refuses to behave, or an Outlook error that won’t let up, simple problems can feel like major disruptions. But buying new software or diving into costly services isn’t always the smartest route.</p>
+			<br>
+			<p>That’s where Hack & Hatch steps in. We’re here to offer straightforward IT solutions that give you the confidence to tackle issues yourself—with fixes that are smart, accessible, and wallet-friendly.</p>
+			<br>
+			<p>If you’re stuck on a glitch, bug, or confusing error message and unsure what kind of fix you need, just drop us a message through the contact form with as much detail as possible. Include screenshots if you can, and our troubleshooting team will reach out with the most effective hacks we’ve got in our toolkit</p>
+		</span>
+  </section>
+  <!-- Portfolio Section -->
+  <section id="hacks" class="section portfolio">
+  <br>
+  <br>
+    <h2>Our Most Recent Hacks...</h2>
+    <div class="portfolio-gallery">
+      <div class="portfolio-item">
+        <img src="project1.png" alt="Project 1">
+        <p>Example 1</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.png" alt="Project 2">
+        <p>Example 2</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project3.png" alt="Project 3">
+        <p>Example 3</p>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+  <br>
+  <br>
+    <h2>Contact Us</h2>
+	<br>
+	<br>
+		<p>If you have any issues that you need help with or would like us to post a tip or hack for then fill in the below form and send us your details.</p>
+		<br>
+		<p>Contact Form Here...</p>
+  </section>
+  
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+  &#8593; <!-- Upwards arrow symbol -->
+</button>
+
+  <!-- Footer -->
+  <footer>
+    <p style="font-family: impact, sans-serif;">&copy; 2025 Hack & Hatch | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Smooth scroll initialization
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
+  </script>
+  <script>
+  // Get the button
+const backToTopButton = document.getElementById('backToTop');
+
+// Show the button when the user scrolls down
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+};
+
+// Scroll to the top when the button is clicked
+backToTopButton.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
+</script>
+</body>
+</html>
